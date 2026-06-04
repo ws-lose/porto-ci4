@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RST Cipher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Transhiver</title>
 
     <style>
         body{
@@ -11,8 +12,21 @@
             padding:20px;
         }
 
+        .title{
+            font-size:20px;
+            color:#333;
+            margin-bottom:5px;
+        }
+
+        .subtitle{
+            margin-left: 8px;
+            font-size:14px;
+            color:#666;
+            margin-bottom:32px;
+        }
+
         .container{
-            max-width:650px;
+            max-width:400px;
             margin:auto;
             background:#fff;
             padding:20px;
@@ -35,7 +49,15 @@
             color:#333;
         }
 
+        label{
+            font-weight:bold;
+            font-size:14px;
+            color:#333;
+        }
+
         button{
+            font-size:16px;
+            font-weight:bold;
             width:100%;
             padding:10px;
             background:#007bff;
@@ -43,14 +65,18 @@
             color:white;
             border-radius:6px;
             cursor:pointer;
+            margin-top:14px;
         }
 
         button:hover{
             background:#0056b3;
         }
 
-        .section{
-            margin-top:15px;
+        .hasil-encrypt{
+            margin-top:32px;
+        }
+        .hasil-decrypt{
+            margin-top: 16px;
         }
     </style>
 </head>
@@ -68,24 +94,25 @@ if (isset($_POST['proses'])) {
 
 ?>
 <div class="container">
-    <h2>Caesar Transhiver (Caesar Transposition Shift reVerse)</h2>
+    <h2 class="title">Caesar Transhiver (Caesar Transposition Shift reVerse)</h2>
+    <p class="subtitle">Caesar Transhiver adalah metode enkripsi teks yang menggunakan pergeseran huruf +3, membalik teks dan perpindahan huruf dalam kata</p>
     <form method="post">
 
-        <label>Input Text</label>
-        <textarea name="teks" required><?php echo $_POST['teks'] ?? ''; ?></textarea>
+        <label for="teks">Input Text</label>
+        <textarea name="teks" id="teks" required><?php echo $_POST['teks'] ?? ''; ?></textarea>
 
-        <button type="submit" name="proses">PROCESS (Encrypt & Decrypt)</button>
+        <button type="submit" name="proses">Submit</button>
 
     </form>
 
-    <div class="section">
-        <label>Hasil Enkripsi</label>
-        <input type="text" value="<?= $enc ?>" disabled>
+    <div class="hasil-encrypt">
+        <label for="encrypt">Hasil Encrypt</label>
+        <input type="text" id="encrypt" value="<?= $enc ?>" disabled>
     </div>
 
-    <div class="section">
-        <label>Hasil Dekripsi</label>
-        <input type="text" value="<?= $dec ?>" disabled>
+    <div class="hasil-decrypt">
+        <label for="decrypt">Hasil Decrypt</label>
+        <input type="text" id="decrypt" value="<?= $dec ?>" disabled>
     </div>
 
 </div>
