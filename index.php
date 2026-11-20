@@ -81,25 +81,19 @@
     </style>
 </head>
 <body>
-<?php include 'proses.php'; 
-$enc = "";
-$dec = "";
-
-if (isset($_POST['proses'])) {
-    $input = $_POST['teks'];
-
-    $enc = encrypt($input, $shift);
-    $dec = decrypt($enc, $shift);
-}
-
+<?php
+$enc = $enc ?? '';
+$dec = $dec ?? '';
+$teks = $teks ?? '';
 ?>
 <div class="container">
     <h2 class="title">Caesar Transhiver (Caesar Transposition Shift reVerse)</h2>
     <p class="subtitle">Caesar Transhiver adalah metode enkripsi teks yang menggunakan pergeseran huruf +3, membalik teks dan perpindahan huruf dalam kata</p>
-    <form method="post">
+    <form action="<?= site_url('utsksi/proses') ?>" method="post">
+    <?= csrf_field() ?>
 
         <label for="teks">Input Text</label>
-        <textarea name="teks" id="teks" required><?php echo $_POST['teks'] ?? ''; ?></textarea>
+        <textarea name="teks" id="teks" required><?= esc($teks) ?></textarea>
 
         <button type="submit" name="proses">Submit</button>
 
@@ -107,12 +101,12 @@ if (isset($_POST['proses'])) {
 
     <div class="hasil-encrypt">
         <label for="encrypt">Hasil Encrypt</label>
-        <input type="text" id="encrypt" value="<?= $enc ?>" disabled>
+        <input type="text" id="encrypt" value="<?= esc($enc) ?>" disabled>
     </div>
 
     <div class="hasil-decrypt">
         <label for="decrypt">Hasil Decrypt</label>
-        <input type="text" id="decrypt" value="<?= $dec ?>" disabled>
+        <input type="text" id="decrypt" value="<?= esc($dec) ?>" disabled>
     </div>
 
 </div>
