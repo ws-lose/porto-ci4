@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <form id="form-text" name="form-text" method="POST" action="prosesHitung.php">
+        <table width="400" border="0" cellspacing="1" cellpadding="2">
+            <tr>
+                <td>Angka 1</td>
+                <td>: <input type="text" name="Angka1" id="nilaiA"></td>
+            </tr>
+            <tr>
+                <td>Angka 2</td>
+                <td>: <input type="text" name="Angka2" id="nilaiB"></td>
+            </tr>
+            <tr>
+                <td>Operator</td>
+                <td>
+                    <input type="radio" name="operator" value="Tambah"> +
+                    <input type="radio" name="operator" value="Kurang"> -
+                    <input type="radio" name="operator" value="Kali"> *
+                    <input type="radio" name="operator" value="Bagi"> /
+                    <input type="radio" name="operator" value="Modulo"> %
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><br><input name="submit" type="submit" value="Hitung">
+                <input name="reset" type="reset" value="Clear"></td>
+            </tr>
+    </form>
+</body>
+</html>
