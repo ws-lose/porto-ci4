@@ -22,16 +22,16 @@ $routes->get('praktikum1', function () {
     return redirect()->to(base_url('project/prakt1 input text/formText.php'));
 });
 $routes->get('praktikum2', function () {
-    return redirect()->to(base_url('project/prakt2 input radio/kalkulator.php'));
+    return redirect()->to(base_url('project/prakt2 input radio/kalkulator.html'));
 });
 $routes->get('praktikum3', function () {
-    return redirect()->to(base_url('project/prakt3 input checkbox/formCheckbox.php'));
+    return redirect()->to(base_url('project/prakt3 input checkbox/formCheckbox.html'));
 });
 $routes->get('praktikum4', function () {
     return redirect()->to(base_url('project/prakt4 input combobox/formCombobox.php'));
 });
 $routes->get('praktikum5', function () {
-    return redirect()->to(base_url('project/prakt5 input textarea/formTextArea.php'));
+    return redirect()->to(base_url('project/prakt5 textarea/formTextArea.php'));
 });
 $routes->get('praktikum6', function () {
     return redirect()->to(base_url('project/formLengkap/formLengkap.php'));

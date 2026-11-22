@@ -50,8 +50,9 @@
         <!-- MAIN CONTENT -->
         <div class="container ">
             <!-- CAROUSEL -->
-        <div class="mt-5 mb-5 rounded-4 object-fit-cover" style="height: 100vh;">
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="mt-5 mb-5 rounded-4 object-fit-cover scroll-reveal"
+     style="height: 100vh;">
+            <div id="carouselExample" class="carousel slide parallax-container" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
                         <img src="<?= base_url('assets/images/carousel1.png') ?>" class="d-block w-100" alt="gambar1">
@@ -89,7 +90,8 @@
         </div>
 
         <!-- About Us -->
-        <div class="container mt-5 bg-secondary bg-light pb-4 pt-1rem rounded-4" id="about" style="box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+        <div class="container mt-5 bg-secondary bg-light pb-4 pt-1rem rounded-4 scroll-reveal"
+     id="about" style="box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
             <h1 class="text-center text-light fw-bold p-2 bg-primary w-100 rounded-3" style="font-size: 32px; height: 60px; font-family: 'Inter'; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">About Us</h1>
             <div class="container1 mt-5 mb-32">
         <div class="paragraf mb-8">  
@@ -106,17 +108,17 @@
         </div>
 
         <div class="img-profile">
-            <img src="<?= base_url('assets/images/img-profile.png') ?>" alt="Profile Image" class="profile-image ml-12 rounded-circle" style="object-fit:cover; margin-bottom:20px; margin-right:20px; width:420px; height:450px;">  
+            <img src="<?= base_url('assets/images/img-profile.png') ?>" alt="Profile Image" class="profile-image ml-12 rounded-circle scroll-image" style="object-fit:cover; margin-bottom:20px; margin-right:20px; width:420px; height:450px;">  
         </div> 
         </div>
         </div>
 
         <!-- What We Do -->
-        <div class="porto container pb-5 rounded-3 bg-white " style="margin-top: 120px; box-shadow: 0px 4px 8px rgba(2,2,2,0.1);">
+        <div class="porto container pb-5 rounded-3 bg-white scroll-image" style="margin-top: 120px; box-shadow: 0px 4px 8px rgba(2,2,2,0.1);">
         <h2 class="title bg-primary text-center mb-5 text-light fw-bold p-2 w-100 rounded-3 mt-4" style="font-size: 32px; font-family: 'Inter'; ">What We Do</h2>
         <div class="row align-items-center m-3 gap-3">
             <div class="col">
-                <div class="card ml-5 p-1 pb-1" style="border: 1px solid #646464;">
+                <div class="card ml-5 p-1 pb-1 scroll-card" style="border: 1px solid #646464;">
                 <div class="d-flex justify-content-center gap-3 icon">
                 <i class="fa-brands fa-html5 icon-html"></i>
                 <i class="fa-brands fa-css3-alt icon-css"></i>
@@ -126,7 +128,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="border: 1px solid #646464;">
+                <div class="card scroll-card" style="border: 1px solid #646464;">
                     <div class="d-flex justify-content-center gap-3 icon">
                         <i class="fa-solid fa-database icon"></i>
                     </div>
@@ -134,7 +136,7 @@
                 </div>
             </div>
             <div class="col ml-5">
-                <div class="card" style="border: 1px solid #646464;">
+                <div class="card scroll-card" style="border: 1px solid #646464;">
                     <div class="d-flex justify-content-center gap-3 icon">
                         <i class="fa-solid fa-paint-brush icon"></i>
                     </div>
@@ -145,7 +147,7 @@
         </div>
 
         <!-- card my tech -->
-        <div class="container text-center bg-white rounded-5"  style=" margin-top: 120px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+        <div class="container text-center bg-white rounded-5 scroll-reveal"  style=" margin-top: 120px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
             
             <h2 class="bg-primary text-light rounded-3 w-95 m-4 p-2 fw-bold" style="font-size: 32px;">My Tech</h2>
             <p class="mb-4">Here are some of the technologies I'm proficient in.</p>
@@ -153,7 +155,7 @@
             <!-- Columns 1-->
             <div class="col">
             <!-- Card 1-->
-            <div class="card border border-secondary rounded-3" style="width: 18rem; margin-left: 30px ">
+            <div class="card border border-secondary rounded-3 scroll-card" style="width: 18rem; margin-left: 30px ">
             <img src="https://i.pinimg.com/1200x/1a/0a/6e/1a0a6e55d977ccb17cdb79aba6856be2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">MySQL</h5>
@@ -166,7 +168,7 @@
             <!-- Columns 2-->
             <div class="col">
             <!-- Card 2-->
-            <div class="card border border-secondary rounded-3"" style="width: 18rem; margin-left: 30px ">
+            <div class="card border border-secondary rounded-3 scroll-card" style="width: 18rem; margin-left: 30px ">
             <img src="https://i.pinimg.com/1200x/14/da/cf/14dacf8c467f1f09046e98b85aaf341a.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">PHP</h5>
@@ -179,7 +181,7 @@
             <!-- Columns 3-->
             <div class="col">
             <!-- Card 3-->
-            <div class="card border border-secondary rounded-3" style="width: 18rem; margin-left: 30px; margin-bottom: 50px;">
+            <div class="card border border-secondary rounded-3 scroll-card" style="width: 18rem; margin-left: 30px; margin-bottom: 50px;">
             <img src="https://i.pinimg.com/736x/7d/f0/25/7df025c00fa46209ffa547590173a6b1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title mt-4">Java</h5>
@@ -192,14 +194,14 @@
     </div>
     </div>
     <!-- My Project -->
-    <div class="project bg-white rounded-4 text-center" id="portofolio" style="margin-top: 120px; padding: 0px 20px 10px 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+    <div class="project bg-white rounded-4 text-center scroll-reveal" id="portofolio" style="margin-top: 120px; padding: 0px 20px 10px 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
         <h2 class="text-center bg-primary text-light rounded-3 m-4 p-2 fw-bold" style="font-size: 32px;">My Project</h2>
         <p>This is my project description of my latest work .</p>
     <!-- row 1 -->
     <div class="container text-center ">
     <div class="row align-items-start p-4 gap-5 ">
 
-        <div class="col card-pj rounded-4" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
+        <div class="col card-pj rounded-4 scroll-card" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
         <a href="<?= site_url('praktikum1') ?>"
            target="_blank"><img src="<?= base_url('assets/images/P1.png') ?>" class="card-img-top" alt="..."
         style="width: 100%; height: 150px; object-fit: cover;"></a>
@@ -207,14 +209,14 @@
         <p>Create a simple text input fields.</p>
         </div>
 
-        <div class="col card-pj rounded-4" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
+        <div class="col card-pj rounded-4 scroll-card" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
         <a href="<?= site_url('praktikum2') ?>"
            target="_blank"><img src="<?= base_url('assets/images/P2.png') ?>" class="card-img-top" alt="..."
         style="width: 100%; height: 150px; object-fit: cover;"></a>
         <h5>Praktikum 2</h5>
         <p>Create a simple calculator.</p>
         </div>
-        <div class="col card-pj rounded-4" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
+        <div class="col card-pj rounded-4 scroll-card" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
         <a href="<?= site_url('praktikum3') ?>"
            target="_blank"><img src="<?= base_url('assets/images/P3.png') ?>" class="card-img-top" alt="..."
         style="width: 100%; height: 150px; object-fit: cover;"></a>
@@ -226,21 +228,21 @@
     <!-- row 2 -->
      <div class="container text-center">
     <div class="row align-items-center p-4 gap-5">
-        <div class="col card-pj rounded-4" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
+        <div class="col card-pj rounded-4 scroll-card" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
         <a href="<?= site_url('praktikum4') ?>"
            target="_blank"><img src="<?= base_url('assets/images/P4.png') ?>" class="card-img-top" alt="..."
         style="width: 100%; height: 150px; object-fit: cover;"></a>
         <h5>Praktikum 4</h5>
         <p>Create form with a combobox.</p>
         </div>
-        <div class="col card-pj rounded-4" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
+        <div class="col card-pj rounded-4 scroll-card" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
         <a href="<?= site_url('praktikum5') ?>"
            target="_blank"><img src="<?= base_url('assets/images/P5.png') ?>" class="card-img-top" alt="..."
         style="width: 100%; height: 150px; object-fit: cover;"></a>
         <h5>Praktikum 5</h5>
         <p>Create a simple form with a textarea.</p>
         </div>
-        <div class="col card-pj rounded-4" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
+        <div class="col card-pj rounded-4 scroll-card" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
         <a href="<?= site_url('praktikum6') ?>"
            target="_blank"><img src="<?= base_url('assets/images/P6.png') ?>" class="card-img-top" alt="..."
         style="width: 100%; height: 150px; object-fit: cover;"></a>
@@ -252,21 +254,21 @@
     <!-- row 3 -->
      <div class="container text-center">
     <div class="row align-items-end p-4 gap-5">
-        <div class="col card-pj rounded-4" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
+        <div class="col card-pj rounded-4 scroll-card" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
         <a href="<?= site_url('praktikum7') ?>"
            target="_blank"><img src="<?= base_url('assets/images/F7LOGIN.png') ?>" class="card-img-top" alt="..."
         style="width: 100%; height: 150px; object-fit: cover;"></a>
         <h5>Praktikum 7</h5>
         <p>Create a simple login form.</p>
         </div>
-        <div class="col card-pj rounded-4" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
+        <div class="col card-pj rounded-4 scroll-card" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
         <a href="<?= site_url('praktikum8') ?>"
            target="_blank"><img src="<?= base_url('assets/images/F8SIGNUP.png') ?>" class="card-img-top" alt="..."
         style="width: 100%; height: 150px; object-fit: cover;"></a>
         <h5>Praktikum 8</h5>
         <p>Create a simple signup form.</p>
         </div>
-        <div class="col card-pj rounded-4" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
+        <div class="col card-pj rounded-4 scroll-card" style="border: 1px solid #e5e7eb; box-shadow: 0 4px 15px rgba(0,0,0,.05);">
         <a href="<?= site_url('utsksi') ?>"
            target="_blank"><img src="<?= base_url('assets/images/P9PORTO.png') ?>" class="card-img-top" alt="..."
         style="width: 100%; height: 150px; object-fit: cover;"></a>
@@ -282,7 +284,7 @@
         <section class="py-5">
         <div class="container px-5">
             <!-- Contact form-->
-        <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+        <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5 scroll-reveal">
             <div class="text-center mb-5">
                 <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
                     <h1 class="fw-bolder">We're  appreciate it</h1>
