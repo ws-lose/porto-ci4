@@ -79,7 +79,6 @@
   }
 }
 
-/* Animasi teks */
 @keyframes text-appear {
   from {
     opacity: 0;
@@ -92,7 +91,6 @@
   }
 }
 
-/* Animasi gambar */
 @keyframes image-appear {
   from {
     filter: saturate(0) contrast(1.5) brightness(0.5) blur(5px);
@@ -109,7 +107,6 @@
   }
 }
 
-/* Aktifkan animasi jika browser mendukung */
 @supports (animation-timeline: view()) {
   /* Section utama */
   .scroll-reveal {
@@ -118,7 +115,6 @@
     animation-range: entry 0% cover 35%;
   }
 
-  /* Teks dalam section */
   .scroll-reveal h1,
   .scroll-reveal h2,
   .scroll-reveal h3,
@@ -128,14 +124,12 @@
     animation-range: entry 0% cover 30%;
   }
 
-  /* Gambar */
   .scroll-image {
     animation: image-appear linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
   }
 
-  /* Card */
   .scroll-card {
     animation: reveal-up linear both;
     animation-timeline: view();
@@ -147,7 +141,6 @@
    HOVER ANIMATION
 ========================================= */
 
-/* Social media icon */
 .icons {
   transition:
     transform 0.25s ease,
@@ -196,7 +189,6 @@
     animation-range: entry 0% cover 35%;
   }
 
-  /* Card muncul secara bergantian */
   .scroll-card:nth-child(1) {
     animation-delay: 0ms;
   }
